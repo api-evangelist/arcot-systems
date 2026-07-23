@@ -1,7 +1,25 @@
 aid: arcot-systems
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/arcot-systems.png
 name: Arcot Systems
-description: Arcot Systems is a company surfaced as a portfolio company of accel and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Arcot Systems is a payment security and advanced authentication company
+  founded in 1997 that co-invented the 3-D Secure protocol with Visa. Its TransFort
+  and ArcotID products delivered card-not-present fraud prevention, risk-based
+  authentication, and cardholder authentication for online card payments. Accel was
+  an early venture investor. CA Technologies acquired Arcot in 2010 in a $200 million
+  all-cash transaction, and the technology now ships as the "Arcot by Broadcom"
+  payment security and fraud prevention product line at arcot.broadcom.com. It is no
+  longer an independent company and publishes no public developer API surface.
 url: https://raw.githubusercontent.com/api-evangelist/arcot-systems/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +27,35 @@ x-backed-by:
 - accel
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: CA Technologies (2010), now Broadcom
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Payment Security
+- Fraud Prevention
+- Authentication
+- 3-D Secure
+- Cardholder Authentication
+- Risk-Based Authentication
+- Payments
+common:
+- type: DomainSecurity
+  url: security/arcot-systems-domain-security.yml
+- type: Website
+  url: https://arcot.broadcom.com/
+- type: Product
+  url: https://www.broadcom.com/products/software/payment-security
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
