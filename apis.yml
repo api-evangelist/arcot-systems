@@ -12,14 +12,12 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/arcot-systems.png
 name: Arcot Systems
-description: Arcot Systems is a payment security and advanced authentication company
-  founded in 1997 that co-invented the 3-D Secure protocol with Visa. Its TransFort
-  and ArcotID products delivered card-not-present fraud prevention, risk-based
-  authentication, and cardholder authentication for online card payments. Accel was
-  an early venture investor. CA Technologies acquired Arcot in 2010 in a $200 million
-  all-cash transaction, and the technology now ships as the "Arcot by Broadcom"
-  payment security and fraud prevention product line at arcot.broadcom.com. It is no
-  longer an independent company and publishes no public developer API surface.
+description: Arcot Systems is a payment security and advanced authentication company founded in 1997 that co-invented
+  the 3-D Secure protocol with Visa. Its TransFort and ArcotID products delivered card-not-present fraud prevention,
+  risk-based authentication, and cardholder authentication for online card payments. Accel was an early venture
+  investor. CA Technologies acquired Arcot in 2010 in a $200 million all-cash transaction, and the technology now
+  ships as the "Arcot by Broadcom" payment security and fraud prevention product line at arcot.broadcom.com. It
+  is no longer an independent company and publishes no public developer API surface.
 url: https://raw.githubusercontent.com/api-evangelist/arcot-systems/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -31,7 +29,7 @@ x-status: acquired
 x-acquired-by: CA Technologies (2010), now Broadcom
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-08-21'
 tags:
 - Company
 - Payment Security
@@ -51,6 +49,12 @@ tags_raw:
 - Risk-Based Authentication
 - Payments
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/ca/
+  name: CA Technologies (Broadcom)
+  x-relationship: acquisition
+  x-generated-by: broadcom-family:2026-08-21
+  x-acquired: 2010
 - type: DomainSecurity
   url: security/arcot-systems-domain-security.yml
 - type: Website
@@ -68,3 +72,6 @@ x-enrichment:
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-parent: ca
+x-relationship: acquisition
+x-acquired: 2010
